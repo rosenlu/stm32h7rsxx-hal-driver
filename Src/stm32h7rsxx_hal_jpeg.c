@@ -3369,7 +3369,6 @@ static void JPEG_Init_Process(JPEG_HandleTypeDef *hjpeg)
 static uint32_t JPEG_Process(JPEG_HandleTypeDef *hjpeg)
 {
   uint32_t tmpContext;
-  uint32_t itsource = hjpeg->Instance->CR;
   uint32_t itflag = hjpeg->Instance->SR;
 
   /*End of header processing flag */
@@ -3828,7 +3827,6 @@ static HAL_StatusTypeDef JPEG_DMA_StartProcess(JPEG_HandleTypeDef *hjpeg)
   */
 static void JPEG_DMA_ContinueProcess(JPEG_HandleTypeDef *hjpeg)
 {
-  uint32_t itsource = hjpeg->Instance->CR;
   uint32_t itflag = hjpeg->Instance->SR;
 
   /*End of header processing flag rises*/

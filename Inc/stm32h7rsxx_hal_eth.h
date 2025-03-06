@@ -105,7 +105,7 @@ typedef struct
 
   uint32_t *PacketAddress[ETH_TX_DESC_CNT];  /*<! Ethernet packet addresses array */
 
-  uint32_t *CurrentPacketAddress;           /*<! Current transmit NX_PACKET addresses */
+  uint32_t *CurrentPacketAddress;           /*<! Current transmit packet addresses */
 
   uint32_t BuffersInUse;                   /*<! Buffers in Use */
 
@@ -1798,6 +1798,7 @@ uint32_t             HAL_ETH_GetError(const ETH_HandleTypeDef *heth);
 uint32_t             HAL_ETH_GetDMAError(const ETH_HandleTypeDef *heth);
 uint32_t             HAL_ETH_GetMACError(const ETH_HandleTypeDef *heth);
 uint32_t             HAL_ETH_GetMACWakeUpSource(const ETH_HandleTypeDef *heth);
+uint32_t             HAL_ETH_GetTxBuffersNumber(const ETH_HandleTypeDef *heth);
 /**
   * @}
   */

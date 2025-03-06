@@ -897,7 +897,6 @@ uint32_t LL_DMA_CreateLinkNode(const LL_DMA_InitNodeTypeDef *DMA_InitNodeStruct,
     assert_param(IS_LL_DMA_TRIGGER_SELECTION(DMA_InitNodeStruct->TriggerSelection));
   }
 
-  /* Check non 2D addressing settings */
   {
     assert_param(IS_LL_DMA_BURST_LENGTH(DMA_InitNodeStruct->SrcBurstLength));
     assert_param(IS_LL_DMA_BURST_LENGTH(DMA_InitNodeStruct->DestBurstLength));
